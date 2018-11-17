@@ -9,6 +9,6 @@ eureka:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${random.int}
 auth:
-  sec: hello danfeng bus
+  sec: hello danfeng
 server:
   port: 0
