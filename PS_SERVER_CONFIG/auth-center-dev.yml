@@ -11,4 +11,4 @@ eureka:
 auth:
   sec: hello
 server:
-  port: 9999
+  port: 0
