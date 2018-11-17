@@ -10,3 +10,5 @@ eureka:
     instance-id: ${spring.application.name}:${random.int}
 auth:
   sec: hello
+server:
+  port: 9999
