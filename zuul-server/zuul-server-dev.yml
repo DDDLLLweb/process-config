@@ -25,7 +25,7 @@ ps:
       allowedOrigins: "*"
       allowedHeader: "*"
       allowedMethods: "*"
-      maxAge: "*"
+      maxAge: 1800L
       allow: "*"
       path: "/**"
     csrf: 
