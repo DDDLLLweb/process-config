@@ -10,3 +10,23 @@ eureka:
     instance-id: ${spring.application.name}:${random.int}
 server:
   port: 0
+
+zuul:
+  ignoredServices: '*'
+  sensitiveHeaders: Cookie,Set-Cookie
+  routes:
+    auth-center:
+      path: /api/auth/**
+      serviceId: auth-center
+ps:
+  security:
+    cors:  
+      allowCredentials: true
+      allowedOrigins: "*"
+      allowedHeader: "*"
+      allowedMethods: "*"
+      maxAge: "*"
+      allow: "*"
+      path: "/**"
+    csrf: 
+      diable: false
