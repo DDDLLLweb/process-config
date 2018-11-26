@@ -12,3 +12,16 @@ auth:
   sec: hello danfeng bus git hook
 server:
   port: 0
+  
+ps:
+  security:
+    cors:  
+      allowCredentials: true
+      allowedOrigins: "*"
+      allowedHeader: "*"
+      allowedMethods: "*"
+      maxAge: 1800
+      allow: "*"
+      path: "/**"
+    csrf: 
+      enable: false
