@@ -18,7 +18,13 @@ zuul:
     auth-center:
       path: /api/auth/**
       serviceId: auth-center
-
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
 ps:
   security:
     cors:  
