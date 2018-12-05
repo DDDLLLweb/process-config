@@ -19,11 +19,12 @@ zuul:
       path: /api/auth/**
       serviceId: auth-center
 
-security:
-  oauth2:
-    client:
-      clientId: ps_zuul_server
-      clientSecret: password
+# security:
+#   oauth2:
+#     client:
+#       clientId: ps_zuul_server
+#       clientSecret: password
+
 ps:
   security:
     cors:  
