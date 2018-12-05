@@ -32,5 +32,5 @@ ps:
     csrf: 
       enable: false
     oauth2:
-      clientId: ps_zuul_server
-      clientSecret: password
+      clientId: system
+      clientSecret: system
