@@ -34,3 +34,4 @@ ps:
     oauth2:
       clientId: system
       clientSecret: system
+      defaultSecret: false
