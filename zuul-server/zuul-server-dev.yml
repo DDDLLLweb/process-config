@@ -38,6 +38,6 @@ ps:
     csrf: 
       enable: false
     oauth2:
-      clientId: system
-      clientSecret: system
+      clientId: ps_zuul_center
+      clientSecret: password
       defaultSecret: false
