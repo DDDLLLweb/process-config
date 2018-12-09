@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    include: auth
   redis:
     host: dl.love.com
     port: 6379
@@ -12,7 +14,7 @@ spring:
         max-wait: -1ms
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/cloud_oauth?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    url: jdbc:mysql://39.108.225.237:3306/cloud_oauth?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
     username: root
     password: root
     type: com.zaxxer.hikari.HikariDataSource
@@ -22,7 +24,7 @@ spring:
       connection-test-query: SELECT 1
       auto-commit: true
       idle-timeout: 30000
-      pool-name: AUTHCENTER-HikariCP
+      pool-name: AUTHCENTER-HIKAIRCP
       connection-timeout: 50000
 
 eureka:
