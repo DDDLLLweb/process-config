@@ -12,14 +12,18 @@ spring:
         max-wait: -1ms
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    # url: jdbc:mysql://localhost:3306/cloud_oauth?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
-    jdbcUrl: jdbc:mysql://localhost:3306/cloud_oauth?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    url: jdbc:mysql://localhost:3306/cloud_oauth?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
     username: root
     password: root
+    type: com.zaxxer.hikari.HikariDataSource
     hikari:
       minimum-idle: 5
       maximum-pool-size: 20
       connection-test-query: SELECT 1
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: AUTHCENTER-HikariCP
+      connection-timeout: 50000
 
 eureka:
   client:
