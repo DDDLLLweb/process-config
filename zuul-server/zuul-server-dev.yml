@@ -16,7 +16,7 @@ zuul:
   sensitiveHeaders: Cookie,Set-Cookie
   routes:
     auth-center:
-      path: /api/auth/**
+      path: /auth/**
       serviceId: auth-center
 feign:
   client:
@@ -24,7 +24,11 @@ feign:
       default:
         connectTimeout: 100000
         readTimeout: 100000
-        loggerLevel: basic
+        loggerLevel: FULL # NONE: 不记录信息, BASIC:仅记录请求方法，URL以及
+  okhttp:
+    enabled: true
+  hystrix:
+    enabled: true  
 ps:
   security:
     cors:  
