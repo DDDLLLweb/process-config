@@ -27,6 +27,8 @@ feign:
         loggerLevel: FULL # NONE: 不记录信息, BASIC:仅记录请求方法，URL以及
   okhttp:
     enabled: true
+  httpclient:
+    enabled: false
   # hystrix:
   #   enabled: true  
 ps:
