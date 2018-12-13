@@ -1,3 +1,16 @@
+spring:
+  redis:
+    host: dl.love.com
+    port: 6379
+    password: rds
+    timeout: 10s
+    lettuce:
+      pool:
+        min-idle: 0
+        max-idle: 8
+        max-active: 8
+        max-wait: -1ms
+
 eureka:
   client:
     serviceUrl:
