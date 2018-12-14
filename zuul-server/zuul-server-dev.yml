@@ -36,7 +36,8 @@ zuul:
       serviceId: backend-server
 ribbon:
   eureka:
-    enabled: true     
+    enabled: true   
+      
 feign:
   client:
     config:
