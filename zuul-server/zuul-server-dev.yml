@@ -67,14 +67,10 @@ ps:
       allowedHeader: "*"
       allowedMethods: "*"
       maxAge: 1800
-      allow: "http://localhost:3006"
+      allow: "*"
       path: "/**"
     csrf: 
       enable: true
-    oauth2:
-      clientId: ps_zuul_center
-      clientSecret: password
-      defaultSecret: false
 
 ribbon:
   ReadTimeout: 10000
