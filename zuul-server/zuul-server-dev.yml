@@ -28,10 +28,10 @@ zuul:
   ignoredServices: '*'
   sensitiveHeaders: Cookie,Set-Cookie
   routes:
-    auth-center:
+    auth:
       path: /auth/**
       serviceId: auth-center
-    backend-server: 
+    backend: 
       path: /backend/api/**
       url: http://192.168.2.72:9999
 
