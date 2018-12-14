@@ -35,10 +35,6 @@ zuul:
       path: /backend/api/**
       url: http://192.168.2.72:9999
 
-logging:
-  level:
-    com.netflix: debug 
-
 feign:
   client:
     config:
