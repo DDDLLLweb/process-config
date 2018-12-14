@@ -34,7 +34,7 @@ zuul:
     backend-server: 
       path: /backend/api/**
       serviceId: backend-server
-    strip-prefix: false
+    stripPrefix: false
 logging:
   level:
     com.netflix: debug 
