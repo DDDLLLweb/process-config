@@ -23,7 +23,8 @@ eureka:
     instance-id: ${spring.application.name}:${random.int}
 server:
   port: 9001
-
+  context-path: /process
+  
 zuul:
   ignoredServices: '*'
   sensitiveHeaders: Cookie,Set-Cookie
