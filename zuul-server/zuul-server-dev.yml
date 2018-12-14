@@ -34,7 +34,13 @@ zuul:
     BACKEND-SERVER:
       path: /backend/**
       serviceId: BACKEND-SERVER
-
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 60000
+  add-proxy-headers: true
+  ribbon:
+    eager-load:
+      enabled: true
 feign:
   client:
     config:
@@ -65,3 +71,15 @@ ps:
       clientId: ps_zuul_center
       clientSecret: password
       defaultSecret: false
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
