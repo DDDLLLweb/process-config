@@ -39,10 +39,10 @@ eureka:
     instance-id: ${spring.application.name}:${random.int}
 
 server:
-  port: 9999
+  port: 0
   servlet:
     context-path: /backend
-    
+
 security:
   oauth2:
     resource:
