@@ -34,10 +34,11 @@ zuul:
     backend-server: 
       path: /backend/api/**
       serviceId: backend-server
-ribbon:
-  eureka:
-    enabled: true   
-      
+    strip-prefix: false
+logging:
+  level:
+    com.netflix: debug 
+
 feign:
   client:
     config:
