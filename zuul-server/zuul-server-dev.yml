@@ -34,7 +34,9 @@ zuul:
     backend-server: 
       path: /backend/api/**
       serviceId: backend-server
-      
+ribbon:
+  eureka:
+    enabled: true     
 feign:
   client:
     config:
