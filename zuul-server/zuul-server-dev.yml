@@ -31,9 +31,11 @@ zuul:
     auth-center:
       path: /auth/**
       serviceId: auth-center
-    BACKEND-SERVER:
+    backend-server:
       path: /backend/**
-      serviceId: BACKEND-SERVER
+      serviceId: backend-server
+      stripPrefix: false
+      
   host:
     connect-timeout-millis: 10000
     socket-timeout-millis: 60000
