@@ -31,9 +31,9 @@ zuul:
     auth-center:
       path: /auth/**
       serviceId: auth-center
-    backend-server: 
+    BACKEND-SERVER:
       path: /backend/**
-      serviceId: backend-server
+      serviceId: BACKEND-SERVER
 
 feign:
   client:
