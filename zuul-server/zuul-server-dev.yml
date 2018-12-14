@@ -34,6 +34,7 @@ zuul:
     backend-server: 
       path: /backend/api/**
       serviceId: backend-server
+      
 feign:
   client:
     config:
