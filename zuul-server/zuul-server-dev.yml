@@ -71,7 +71,11 @@ ps:
       path: "/**"
     csrf: 
       enable: false
-
+    oauth2:
+      clientId: ps_zuul_center
+      clientSecret: password
+      defaultSecret: false
+      
 ribbon:
   ReadTimeout: 10000
   ConnectTimeout: 10000
