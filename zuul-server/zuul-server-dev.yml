@@ -70,7 +70,7 @@ ps:
       allow: "*"
       path: "/**"
     csrf: 
-      enable: true
+      enable: false
 
 ribbon:
   ReadTimeout: 10000
