@@ -56,4 +56,4 @@ ps:
     csrf: 
       enable: false
     tokenStoreType: jwt
-    signKey: 'auth_center',
+    signKey: auth_center,
