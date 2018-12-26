@@ -37,8 +37,7 @@ eureka:
     lease-renewal-interval-in-seconds: 5
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${random.int}
-auth:
-  sec: hello danfeng bus git hook
+
 server:
   port: 0
   servlet:
@@ -56,3 +55,5 @@ ps:
       path: "/**"
     csrf: 
       enable: false
+    tokenStoreType: jwt
+    signKey: 'auth_center',
