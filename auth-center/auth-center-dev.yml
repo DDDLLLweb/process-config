@@ -55,5 +55,5 @@ ps:
       path: "/**"
     csrf: 
       enable: false
-    tokenStoreType: redis
-    signKey: auth_center,
+    tokenStoreType: jwt
+    signKey: auth_center
