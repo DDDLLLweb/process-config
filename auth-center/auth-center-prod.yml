@@ -2,7 +2,7 @@ spring:
   profiles:
     include: auth
   redis:
-    host: dl.love.com
+    host: 39.108.225.237
     port: 6379
     password: rds
     timeout: 10s
@@ -30,7 +30,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://dl.love.com:8761/eureka/
+      defaultZone: http://register-center:8761/eureka/
     registry-fetch-interval-seconds: 5
   instance:
     lease-expiration-duration-in-seconds: 15
